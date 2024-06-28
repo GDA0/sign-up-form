@@ -1,6 +1,10 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 
+:root {
+  --background-transition: linear-gradient(to right, #a4423f, #6e9b9b);
+}
+
 /* Standards */
 h1,
 h2,
@@ -8,32 +12,63 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-main .col-5 {
-	background-image: url('assets/images/page-image.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+main .col-4 {
+  background-image: url("assets/images/page-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customizedWidth {
+  max-width: 84%;
+}
+
+.submitButton {
+  background: var(--background-transition);
+  border: none;
+  letter-spacing: 0.075rem;
+  will-change: contents;
+  transition: transform 0.3s;
+}
+
+.submitButton:hover {
+  transform: scale(1.05);
+}
+
+.submitButton:active {
+  transform: scale(0.95);
+}
+
+.coloredText {
+  background-image: var(--background-transition);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.form-label {
+  margin-bottom: 0.1rem;
 }
 
 .row {
-	--bs-gutter-x: unset;
+  --bs-gutter-x: unset;
 }
 
 .logo-bg {
-	width: 100%;
-	height: 20%;
-	background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo-bg img {
-    height: 100%;
-    object-fit: contain;
+  height: 100%;
+  object-fit: contain;
 }
-
