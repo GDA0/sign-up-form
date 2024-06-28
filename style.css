@@ -68,3 +68,7 @@ main .col-4 {
   height: 100%;
   object-fit: contain;
 }
+
+a:hover {
+  text-decoration: none;
+}
