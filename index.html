@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="col-8 fs-5 fw-semibold">
-        <div class="p-5 pt-5 mt-5 customizedWidth">
+        <div class="p-5 pt-5 mt-5 container">
           <p>
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. Sign up
@@ -64,32 +64,63 @@
         <div class="bg-white px-5 pt-3 pb-5 shadow-sm">
           <p>Let's do this!</p>
           <form
-            class="row gap-2 gap-md-3 gap-lg-4 fs-6 fw-normal customizedWidth"
+            class="row gap-2 gap-md-3 gap-lg-4 fs-6 fw-normal container needs-validation"
+            novalidate
           >
             <div class="col d-flex flex-column gap-3">
               <div>
                 <label class="form-label" for="first-name">FIRST NAME</label>
-                <input type="text" class="form-control" id="first-name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">First name is required.</div>
               </div>
               <div>
                 <label class="form-label" for="email">EMAIL</label>
-                <input type="email" class="form-control" id="email" />
+                <input type="email" class="form-control" id="email" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid email.</div>
               </div>
               <div>
                 <label class="form-label" for="password">PASSWORD</label>
-                <input type="password" class="form-control" id="password" />
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Password is required.</div>
               </div>
             </div>
             <div class="col d-flex flex-column gap-3">
               <div>
                 <label class="form-label" for="last-name">LAST NAME</label>
-                <input type="text" class="form-control" id="last-name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Last name is required.</div>
               </div>
               <div>
                 <label class="form-label" for="phone-number"
                   >PHONE NUMBER</label
                 >
-                <input type="tel" class="form-control" id="phone-number" />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone-number"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid phone number.</div>
               </div>
               <div>
                 <label class="form-label" for="confirm-password"
@@ -99,23 +130,31 @@
                   type="password"
                   class="form-control"
                   id="confirm-password"
+                  required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">
+                  Please confirm your password.
+                </div>
+                <div class="invalid-feedback mismatch">
+                  Passwords do not match.
+                </div>
               </div>
+            </div>
+            <div>
+              <button
+                class="btn text-light shadow-sm submit-button px-4 py-2 fw-semibold"
+                type="submit"
+              >
+                Create Account
+              </button>
             </div>
           </form>
         </div>
         <div class="px-5 py-4">
           <div>
-            <button
-              class="btn text-light shadow-sm submitButton px-4 py-2 fw-semibold"
-              type="submit"
-            >
-              Create Account
-            </button>
-          </div>
-          <div>
             <p class="py-3 my-2">
-              Already have an account? <span class="coloredText">Log in</span>
+              Already have an account? <a href="#" class="coloredText">Log in</a>
             </p>
           </div>
         </div>

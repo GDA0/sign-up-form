@@ -26,11 +26,7 @@ main .col-4 {
   background-size: cover;
 }
 
-.customizedWidth {
-  max-width: 84%;
-}
-
-.submitButton {
+.submit-button {
   background: var(--background-transition);
   border: none;
   letter-spacing: 0.075rem;
@@ -38,11 +34,11 @@ main .col-4 {
   transition: transform 0.3s;
 }
 
-.submitButton:hover {
+.submit-button:hover {
   transform: scale(1.05);
 }
 
-.submitButton:active {
+.submit-button:active {
   transform: scale(0.95);
 }
 
